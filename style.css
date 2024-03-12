@@ -1,19 +1,20 @@
-* {
-    outline: 2px solid red;
+* { 
+    utline: 2px solid red;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    flex-shrink: 1;
+    
 }
 
-div.header, .top {
+.header {
     display: flex;
     justify-content: space-around;
-    flex: 1;
-    flex-wrap: wrap;
+    background-color: black;
     
 }
 
@@ -23,39 +24,148 @@ div.header, .top {
 }
 
 .right {
-    gap: 10px;
+    gap: 16px;
+    font-size: 18px;
 }
 
 ul {
     list-style-type: none;
+   
 }
 
 a {
     text-decoration-line: none;
+    color: #F9FAF8;
 }
 
-.content {
+.hero-container, .card-container, .review-section {
+    height: 500px;
     display: flex;
-    padding: 100px;
-    gap: 50px;
+    justify-content: center;
+}
+
+.hero-container {
+    gap: 100px;
+    justify-content: center;
+    background-color: #ffd633;
+    min-width: 0%;
 
 }
 
 .main-left-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    width: 400px;    
+    text-align: left;
+    gap: 10px;
+    padding-top: 105px;
+
+
 }
 
 .hero-title {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
+    font-size: 48px;
+    font-weight: bolder;
+    
+}
+
+.left-text-container {
+   display: flex;
+   align-self: flex-start;
+}
+
+button {
+    display: flex;
+    color: #F9FAF8;
+    background-color: black;
+    flex: 0;
+    justify-content: center;
+    width: 80px;
 }
 
 .phillypic {
     display: flex;
-    width: 350px;
-    height: 250px;
+    width: 650px;
+    border-radius: 10px;
+}
+
+.main-text-card-container {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 50px;
+    
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    width: 250px;
+    border-radius: 10px;
+}
+
+div.card-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-section {
+    display: flex;
+    background-color: #999999;
+}
+
+.review-container {
+ 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 900px;
+    align-self: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #262626;
+}
+
+.review-signature {
+    display: flex;
+    justify-content: end;
+    color: black;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order-section {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-container {
+    width: 900px;
+    outline: 2px solid red;
+    display: flex;
+    align-self: center;
 }

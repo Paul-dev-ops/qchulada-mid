@@ -73,15 +73,18 @@ a {
 .left-text-container {
    display: flex;
    align-self: flex-start;
+   font-size: 18px;
 }
 
-button {
+.button1, .button2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: #F9FAF8;
     background-color: black;
-    flex: 0;
-    justify-content: center;
-    width: 80px;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
 }
 
 .phillypic {
@@ -95,15 +98,16 @@ button {
     justify-content: center;
     font-size: 36px;
     font-weight: bolder;
-    margin-top: 50px;
+    padding-top: 70px;
     
 }
 
 .card-container {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 30px;
-    text-align: center;
+    padding-top: 70px;
+    
 }
 
 .card{
@@ -115,6 +119,7 @@ button {
 .card-image {
     width: 250px;
     border-radius: 10px;
+    outline: 2px solid #ffd633;
 }
 
 div.card-title {
@@ -123,7 +128,7 @@ div.card-title {
     font-weight: 700;
     margin-top: 20px;
     font-size: 20px;
-
+    
 }
 
 .card-text {
@@ -133,7 +138,7 @@ div.card-title {
 
 .review-section {
     display: flex;
-    background-color: #999999;
+    background-color: #e6e6e6;
 }
 
 .review-container {
@@ -161,11 +166,54 @@ div.card-title {
     height: 350px;
     display: flex;
     justify-content: center;
+    background-image: url(images/frenfrieswallpaper.jpg);
 }
 
 .order-container {
-    width: 900px;
-    outline: 2px solid red;
     display: flex;
     align-self: center;
+    width: 1200px;
+    height: 100px;
+}
+
+.order-content {
+    outline: 1px dotted black;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    background-color: #2eb82e;
+    border-radius: 15px;
+    
+}
+
+.order-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-self: center;
+}
+
+.order-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.order-text{
+    font-size: 18px;
+}
+
+.button2 {
+   display: flex;
+   align-self: center;
+   outline: 2px solid #ffd633;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+    color: #af921d;
+    font-size: 14px;
 }
